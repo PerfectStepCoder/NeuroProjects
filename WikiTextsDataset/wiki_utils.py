@@ -17,7 +17,7 @@ class Alphabet(object):
     def __len__(self):
         return self._len
 
-    
+
 class Texts(object):
     def __init__(self, path):
         self.dictionary = Alphabet()
@@ -44,7 +44,6 @@ class Texts(object):
                 for s in line:
                     ids[token] = self.dictionary.symbol2idx[s]
                     token += 1
-
         return ids
     
 
